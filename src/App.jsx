@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ColorfulMessage from "./components/ColorfulMessage";
+import { ColorfulMessage } from "./components/ColorfulMessage";
 
 const App = () => {
   const [num, setNum] = useState(0);
@@ -20,6 +20,7 @@ const App = () => {
         faceShowFlag && setFaceShowFlag(false);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [num]);
 
   return (
